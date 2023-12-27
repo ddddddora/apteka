@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>MedicForm</title>
+    <link type="text/css" href="{% static 'apteka_stile/css/action_name.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 class="title-url">Список актуальных акций нашей аптеки</h1>
+    <div class="menu-items">
+        <ul>
+            {% for action in actions %}
+            <li>
+                <a href="{% url 'inf_action' action.id %}">{{ action.action_name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <img class="image" src="{% static 'apteka_stile/img/action.png' %}">
+    </div>
+</div>
+</body>
+</html>

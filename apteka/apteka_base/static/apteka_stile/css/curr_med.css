@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1306px;
+    margin: 0 auto;
+    padding: 0 14px;
+}
+
+h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -2px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: #969186;
+  outline: none;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(95, 95, 95);
+
+  position: relative;
+  top: -570px;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+}
+
+.title-url{
+    font-size: 34px;
+    color: #969186;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(95, 95, 95);
+
+    position: relative;
+    top: 50px;
+}
+
+.inform-text{
+    font-size: 27px;
+    color: #969186;
+    font-family: 'Gambetta', serif;
+    text-align: center;
+    text-indent: 30px;
+    border: 5px double #969186;
+    padding: 10px 20px 10px 20px;
+    margin: -5px auto;
+    width: 800px;
+
+    position: relative;
+    top: 50px;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+.image-med{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.form-content{
+    max-width: 100%;
+    margin-left: 445px;
+    text-align: center;
+    width: 950px;
+    height: 400px;
+    flex-shrink: 0;
+    background: #9691867d;
+    margin-top: 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    top: 5px;
+}
+
+.form-input{
+    width: 840px;
+    height: 30px;
+    flex-shrink: 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: rgba(255, 255, 255, 0.00);
+    padding-left: 12px;
+    font-size: 20px;
+    line-height: normal;
+    color: gray;
+    margin: 35px;
+}
+
+.form-button{
+    width: 150px;
+    height: 40px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 20px;
+    background: #8b7c6bad;
+    position: relative;
+    top: 25px;
+    right: -5px;
+    color: #332d2d;
+    font-family: 'Gambetta', serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+
+    transition: .3s all ease;
+}
+
+.form-button:hover{
+    background: #8b7c6b3d;
+
+    transition: .3s all ease;
+}

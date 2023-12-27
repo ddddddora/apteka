@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{medicines_name}}</title>
+    <link type="text/css" href="{% static 'apteka_stile/css/curr_med.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="title-url">{{medicines_name}}</h2>
+    <br>
+    <h1 class="title-url">Данные лекарства могут вам помочь:</h1>
+    <div class="image-med">
+        <img src="{% static 'apteka_stile/img/' %}{{image_1}}">
+        <img src="{% static 'apteka_stile/img/' %}{{image_2}}">
+        <img src="{% static 'apteka_stile/img/' %}{{image_3}}">
+        <img src="{% static 'apteka_stile/img/' %}{{image_4}}">
+    </div>
+    <br>
+    <h2 class="inform-text">Описание: {{describ}}</h2>
+    <br>
+    <p class="inform-text">
+        Необходимость рецепта:
+        {% if recept %}
+            Да
+        {% else %}
+            Нет
+        {% endif %}
+    </p>
+    </div>
+
+            <div class="form-content">
+                <form action="" class="form">
+                    <input type="text" placeholder="Название товара" class="form-input">
+                    <input type="text" placeholder="Номер телефона" class="form-input">
+                    <input type="text" placeholder="E-mail" class="form-input">
+                    <button class="form-button">
+                        Оформление заказа
+                    </button>
+                </form>
+            </div>
+
+<br>
+</body>
+</html>

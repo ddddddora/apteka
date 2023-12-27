@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вариации лекарств</title>
+    <link type="text/css" href="{% static 'apteka_stile/css/med_name.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <p class="katalog">Перейдите в нужный каталог</p>
+            <div class="menu-items">
+                <ul>
+                    {% for m in menu %}
+                    <li>
+                        <a href="{% url m.url_n %}"> {{m.title}} </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        <div class="medic_name">
+            <h1 class="title-url">Выберите вид препарата</h1>
+                    {% for i in apteka %}
+                        <li>
+                            <a href="{% url tretm_url i.id %}" class="url">
+                                <i>{{i.medicines_name}}</i>
+                            </a>
+                        </li>
+                    {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

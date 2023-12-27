@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>MedicForm</title>
+    <link type="text/css" href="{% static 'apteka_stile/css/actions.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Информация об акции</h2>
+        <h1>{{actions.action_name}}</h1>
+        <div class="content">
+            <p class="info">Дата: {{actions.date_action}}</p>
+            <p class="info">Критерии: {{actions.criterion}}</p>
+        </div>
+        <div class="image">
+        <img src="{% static 'apteka_stile/img/act.png' %}">
+        </div>
+    </div>
+</body>
+</html>

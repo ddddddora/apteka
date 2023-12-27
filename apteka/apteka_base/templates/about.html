@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>MedicForm</title>
+     <link type="text/css" href="{% static 'apteka_stile/css/about.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <p class="katalog">Перейдите в нужный каталог</p>
+     <div class="menu-items">
+        <ul>
+            {% for m in menu %}
+            <li>
+                <a href="{% url m.url_n %}"> {{m.title}} </a>
+            </li>
+            {% endfor %}
+        </ul>
+     </div>
+    <h1 class="title-url">{{menu.1.title}}</h1>
+    <h2 class="inform">Здесь вы можете узнать о нашей аптеке побольше!</h2>
+    <div class="inform-text">
+        <p > Количество открытых аптек позволяет с уверенностью говорить о том,
+        что <span style="color: #9c8879; font-weight: 600;">«MedicForm»</span> — ваша аптека у дома. Мы открываемся в самых удобных местах, <br>
+        близ крупных ЖК и на транспортных узлах. Мы стремимся к тому, чтобы вы в любой момент могли
+        оглянуться по сторонам и увидеть яркую вывеску <span style="color: #9c8879; font-weight: 600;">«MedicForm».</span><br>
+
+        Более того, для ещё большего удобства покупателей работают наши сайт и приложение,
+        где вы можете в любой момент найти интересующий вас препарат, узнать его стоимость <br>
+        и наличие в аптеках и воспользоваться услугой доставки (кроме рецептурных лекарств
+        и лекарств со специальными условиями хранения).</p>
+    </div>
+
+    <h3>Наше расположение: просп. Ленина, 70</h3>
+    <img class="image" src="{% static 'apteka_stile/img/locat.png' %}">
+
+</div>
+</body>
+</html>
